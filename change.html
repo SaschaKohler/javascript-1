@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <title>Document</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
 
 <body>
     <header>
@@ -33,22 +33,28 @@
         </nav>
     </header>
     <main>
-
         <h1>Change type of variable</h1>
+        <aside>
+            <p></p>
+            <p></p>
+        </aside>
+        <article>
 
-        <code>
-        &ltscript&gt
-            "use strict";<br>
-            let variable = prompt('Please provide a number: ');<br>
-            document.write('type of: ' + typeof variable + '&ltbr&gt');<br>
-            document.write(variable + 3);<br>
-            document.write('&ltbr&gt&ltbr&gt');<br>
-            variable = Number(variable);<br>
-            document.write('type of: ' + typeof variable + '&ltbr&gt');<br>
-            document.write(variable + 3);<br>
-        
-         &lt/script&gt
-    </code>
+       
+            <code>
+            &ltscript&gt
+                "use strict";<br>
+                let variable = prompt('Please provide a number: ');<br>
+                document.write('type of: ' + typeof variable + '&ltbr&gt');<br>
+                document.write(variable + 3);<br>
+                document.write('&ltbr&gt&ltbr&gt');<br>
+                variable = Number(variable);<br>
+                document.write('type of: ' + typeof variable + '&ltbr&gt');<br>
+                document.write(variable + 3);<br>
+    
+             &lt/script&gt
+        </code>
+        </article>
     </main>
 
     <footer>
@@ -57,12 +63,11 @@
     <script>
         "use strict";
         let variable = prompt('Please provide a number: ');
-        document.write('type of: ' + typeof variable + '<br>');
-        document.write(variable + 3);
-        document.write('<br><br>');
-        variable = Number(variable);
-        document.write('type of: ' + typeof variable + '<br>');
-        document.write(variable + 3);
+        document.getElementsByTagName("p")[0].innerHTML= 
+        'type of: ' + typeof variable + '<br> ' + variable + 3;
+        let result = Number(variable + 3);
+        document.getElementsByTagName("p")[1].innerHTML=
+        'type of: ' + typeof variable + '<br>' + result;
 
     </script>
 
