@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 
 <body>
     <header>
@@ -30,11 +35,31 @@
             </ul>
         </nav>
     </header>
-    <h1>Challange 6</h1>
+    <main>
+        <h1>Challenge 6</h1>
 
 
-    <h3>Array 1 (Multi dimensional Array)</h3>
+        <h3>Array 1 (Multi dimensional Array)</h3>
 
+        <code>
+        &ltscript&gt<br>
+            "use strict";<br>
+            let array = new Array();<br>
+            alert('Dataset 1');<br>
+            array[0] = [prompt("Firstname: "), prompt('Lastname: '), Number(prompt('Your age: '))];<br>
+            alert('Dataset 2');<br>
+            array[1] = [prompt("Firstname: "), prompt('Lastname: '), Number(prompt('Your age: '))];<br>
+            alert('Dataset 3');<br>
+            array[2] = [prompt("Firstname: "), prompt('Lastname: '), Number(prompt('Your age: '))];<br>
+            let dataset = Number(prompt('which Dataset (0-2) : '));<br>
+            let daacell = Number(prompt('which cell do you need (0-2) : '));<br>
+            document.writeln(array[dataset][datacell]);<br>
+        &lt/script&gt
+    </code>
+    </main>
+    <footer>
+        <h2>proudly presented by <em>SKSoft 1996-2021</em></h2>
+    </footer>
     <script>
         "use strict";
 
@@ -55,6 +80,7 @@
 
 
     </script>
+
 </body>
 
 </html>

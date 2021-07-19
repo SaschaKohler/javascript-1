@@ -5,8 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 
 <body>
     <header>
@@ -30,20 +35,33 @@
             </ul>
         </nav>
     </header>
-    <h1>Challange 9</h1>
-
-
-    <h3>Functions 1/2 together</h3>
-
+    <main>
+        <h1>Challange 9</h1>
+        <h3>Functions 1/2 together</h3>
+        <code>
+            &ltscript&gt<br>
+                "use strict";<br>
+                function double(x) {<br>
+                    let result = Number(2 * x);<br>
+                    return result;<br>
+                }<br>
+                document.writeln(double(Number(prompt("Please type in a number: "))));<br>
+            &lt/script&gt<br>
+        </code>
+        <aside></aside>
+    </main>
+    <footer>
+        <h2>proudly presented by <em>SKSoft 1996-2021</em></h2>
+    </footer>
     <script>
         "use strict";
         function double(x) {
             let result = Number(2 * x);
             return result;
         }
-      
-        document.writeln(double(Number(prompt("Please type in a number: "))));
-        
+
+        document.getElementByTagName("ASIDE").innerHtml = double(Number(prompt("Please type in a number: ")));
+
 
 
     </script>

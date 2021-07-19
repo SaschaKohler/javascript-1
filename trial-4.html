@@ -5,40 +5,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
+
 
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Chalange 1</a></li>
-                <li><a href="typeof.html">Challange 2</a></li>
-                <li><a href="change.html">Challange 3</a></li>
-                <li><a href="trial-1.html">Challange 4</a></li>
-                <li><a href="trial-2.html">Challange 5</a></li>
-                <li><a href="trial-3.html">Challange 6</a></li>
-                <li><a href="trial-4.html">Challange 7</a></li>
-                <li><a href="trial-5.html">Challange 8</a></li>
-                <li><a href="trial-6.html">Challange 9</a></li>
-                <li><a href="trial-7.html">Challange 10</a></li>
-                <li><a href="trial-8.html">Challange 11</a></li>
-                <li><a href="trial-9.html">Challange 12</a></li>
-                <li><a href="trial-10.html">Challange 13</a></li>
-
-
+                <li><a href="index.html">Challenge 1</a></li>
+                <li><a href="typeof.html">Challenge 2</a></li>
+                <li><a href="change.html">Challenge 3</a></li>
+                <li><a href="trial-1.html">Challenge 4</a></li>
+                <li><a href="trial-2.html">Challenge 5</a></li>
+                <li><a href="trial-3.html">Challenge 6</a></li>
+                <li><a href="trial-4.html">Challenge 7</a></li>
+                <li><a href="trial-5.html">Challenge 8</a></li>
+                <li><a href="trial-6.html">Challenge 9</a></li>
+                <li><a href="trial-7.html">Challenge 10</a></li>
+                <li><a href="trial-8.html">Challenge 11</a></li>
+                <li><a href="trial-9.html">Challenge 12</a></li>
+                <li><a href="trial-10.html">Challenge 13</a></li>
             </ul>
         </nav>
     </header>
-    <h1>Challange 4</h1>
+    <main>
+        <h1>Challenge 4</h1>
 
 
-    <h3>Good in simple Algebra?</h3>
+        <h3>Good in simple Algebra?</h3>
+        <code>
+    &ltscript&gt<br>
+        "use strict";<br>
+        var points = 0;<br><br>
+   
+        let result1 = Number(prompt("1. How much is 3 + 5 - 1 : "));<br>
+        switch (result1) {<br>
+            case 7:<br>
+                points++;<br>
+                document.writeln("Your answer " + result1 + " is correct. Your points : " + points);<br>
+                break;<br>
+            default:<br>
+                document.writeln("Sorry, your answer isn't correct");<br>
+        }
 
+        let result2 = Number(prompt("2. How much is 4 * 2: "));<br>
+        switch (result2) {<br>
+            case 8:<br>
+                points++;<br>
+                document.writeln("Your answer " + result2 + " is correct. Your points : " + points);<br>
+                break;<br>
+            default:<br>
+                document.writeln("Sorry, your answer isn't correct");<br>
+        }<br>
+
+        let result3 = Number(prompt("3. How much is 8 / 2: "));<br>
+        switch (result3) {<br>
+            case 4:<br>
+                points++;<br>
+                document.writeln("Your answer " + result3 + " is correct. Your points : " + points);<br>
+                break;<br>
+            default:<br>
+                document.writeln("Sorry, your answer isn't correct");<br>
+        }<br>
+        <br>
+        let result4 = Number(prompt("4. How much is 9 - 3: "));<br>
+        switch (result4) {<br>
+            case 6:<br>
+                points++;<br>
+                if (points > 3) {<br>
+                    document.writeln("Your answer " + result4 + " is correct. Your points : " + points);<br>
+                    document.writeln("Cool you have more then 3 points");<br>
+                }<br>
+                else  {<br>
+                    document.writeln("Your answer " + result4 + " is correct. Your points : " + points);<br>
+                }<br>
+                break;<br>
+            default:<br>
+                document.writeln("Sorry, your answer isn't correct");<br>
+        }<br>
+        <br>
+        let result5 = Number(prompt("5. How much is 9 * 2: "));<br>
+        switch (result5) {<br>
+            case 18:<br>
+                points++;<br>
+                if (points > 3) {<br>
+                    document.writeln("Your answer " + result5 + " is correct. Your points : " + points);<br>
+                    document.writeln("Cool you have more then 3 points")<br>
+                }<br>
+                else {<br>
+                    document.writeln("Your answer " + result5 + " is correct. Your points : " + points);<br>
+                }<br>
+                break;<br>
+            default:<br>
+                document.writeln("Sorry, your answer isn't correct");<br>
+        }<br>
+        <br>
+    &lt/script&gt<br>
+</code>
+    </main>
+    <footer>
+        <h2>proudly presented by <em>SKSoft 1996-2021</em></h2>
+    </footer>
     <script>
         "use strict";
         var points = 0;
-
 
         let result1 = Number(prompt("1. How much is 3 + 5 - 1 : "));
         switch (result1) {
@@ -46,7 +121,6 @@
                 points++;
                 document.writeln("Your answer " + result1 + " is correct. Your points : " + points);
                 break;
-
             default:
                 document.writeln("Sorry, your answer isn't correct");
         }
@@ -79,7 +153,7 @@
                     document.writeln("Your answer " + result4 + " is correct. Your points : " + points);
                     document.writeln("Cool you have more then 3 points")
                 }
-                else  {
+                else {
                     document.writeln("Your answer " + result4 + " is correct. Your points : " + points);
                 }
                 break;
@@ -105,6 +179,7 @@
 
 
     </script>
+
 </body>
 
 </html>
