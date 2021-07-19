@@ -35,6 +35,7 @@
 
     <main>
         <h1>Datentypen ermitteln mit typeof</h1>
+        <aside id="site"></aside>
         <code>
             &ltscript&gt<br>
                 "use strict";<br>
@@ -63,7 +64,7 @@
             let word = "hello";
             let boolean = true;
             let dummy;
-            document.write("Integer: " + typeof integer + " <br>");
+            document.getElementById('site').innerHTML = document.write("Integer: " + typeof integer + " <br>");
             document.write("Float: " + typeof float + " <br>");
             document.write("Char: " + typeof char + " <br>");
             document.write("Word: " + typeof word + " <br>");
