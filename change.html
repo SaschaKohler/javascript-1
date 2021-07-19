@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Welcome</a></li>
+                <li><a href="typeof.html">type-of</a></li>
+                <li><a href="change.html">change datatype</a></li>
+                <li><a href="trial-1.html">trials</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Change type of variable</h1>
+        <script>
+            "use strict";
+            let variable = prompt('Please provide a number: ');
+            document.write('type of: ' + typeof variable + '<br>');
+            document.write(variable + 3);
+            document.write('<br><br>');
+            variable = Number(variable);
+            document.write('type of: ' + typeof variable + '<br>');
+            document.write(variable + 3);
+        
+
+     </script>
+</body>
+</html>
